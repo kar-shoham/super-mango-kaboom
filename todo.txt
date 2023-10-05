@@ -1,0 +1,1 @@
+remove jumping on colliding with the coin
