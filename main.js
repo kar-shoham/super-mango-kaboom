@@ -35,6 +35,13 @@ const scenes = {
   },
   1: () => {
     setGravity(level1Config.gravity);
+    let lvl1Sound = play("water-ambience-sound", {
+      volume: 0.05,
+      loop: true,
+    });
+    onSceneLeave(() => {
+      lvl1Sound.paused = true;
+    });
     let lvl1 = new Level();
     lvl1.drawBackground("forest-background");
     lvl1.drawMapLayout(level1Layout, level1Mapping);
@@ -75,6 +82,13 @@ const scenes = {
   },
   2: () => {
     setGravity(level2Config.gravity);
+    let lvl2Sound = play("lava-ambience-sound", {
+      volume: 1,
+      loop: true,
+    });
+    onSceneLeave(() => {
+      lvl2Sound.paused = true;
+    });
     let lvl2 = new Level();
     lvl2.drawBackground("castle-background");
     lvl2.drawMapLayout(level2Layout, level2Mapping);
@@ -128,6 +142,13 @@ const scenes = {
   },
   3: () => {
     setGravity(level3Config.gravity);
+    let lvl3Sound = play("strong-wind-sound", {
+      volume: 0.4,
+      loop: true,
+    });
+    onSceneLeave(() => {
+      lvl3Sound.paused = true;
+    });
     let lvl3 = new Level();
     lvl3.drawBackground("sky-background-0");
     lvl3.drawBackground("sky-background-1");

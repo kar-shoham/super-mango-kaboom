@@ -213,6 +213,9 @@ const load = {
     loadSound("swinging-axe-sound", "./sounds/swinging-axe.mp3");
     loadSound("saw-sound", "./sounds/saw.wav");
     loadSound("dive-sound", "./sounds/dive.wav");
+    loadSound('water-ambience-sound', './sounds/water-ambience.mp3')
+    loadSound('lava-ambience-sound', './sounds/lava.wav')
+    loadSound('strong-wind-sound', './sounds/strong-wind.wav')
   },
 };
 

@@ -109,7 +109,7 @@ class UIManager {
 
     onKeyPress("enter", () => {
       play("confirm-ui", { speed: 1.5 });
-      go("3");
+      go("1");
     });
   }
 
@@ -151,7 +151,7 @@ class UIManager {
     );
     onKeyPress("enter", () => {
       play("confirm-ui", { speed: 1.5 });
-      go("menu");
+      go("1");
     });
   }
 }

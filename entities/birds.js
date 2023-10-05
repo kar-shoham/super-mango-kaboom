@@ -33,7 +33,7 @@ export class Birds {
     );
   }
   async dive(bird, target, duration) {
-    if (bird.isOffScreen()) play("dive-sound", { volume: 0.1 });
+    if (bird.isOffScreen()) play("dive-sound", { volume: 0.01 });
     await tween(
       bird.pos,
       target,
