@@ -1,1 +1,2 @@
-remove jumping on colliding with the coin
+understand the overall project and make a single page notes
+understand area with rect shape me vector2 ka use

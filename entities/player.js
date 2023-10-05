@@ -45,6 +45,28 @@ export class Player {
       }
     });
   }
+  enableDeathOnContact(){
+    this.gameObj.onCollide('spider', () => {
+      play("hit-sound", { speed: 1.5 });
+      this.playerRespawn()
+    })
+    this.gameObj.onCollide('fish', () => {
+      play("hit-sound", { speed: 1.5 });
+      this.playerRespawn()
+    })
+    this.gameObj.onCollide('axes', () => {
+      play("hit-sound", { speed: 1.5 });
+      this.playerRespawn()
+    })
+    this.gameObj.onCollide('saws', () => {
+      play("hit-sound", { speed: 1.5 });
+      this.playerRespawn()
+    })
+    this.gameObj.onCollide('birds', () => {
+      play("hit-sound", { speed: 1.5 });
+      this.playerRespawn()
+    })
+  }
   allowCoinPickup() {
     this.gameObj.onCollide("coin", (coin) => {
       this.coins++;

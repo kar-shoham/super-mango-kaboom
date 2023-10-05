@@ -133,6 +133,27 @@ class UIManager {
       go("1");
     });
   }
+
+  displayGameEnd() {
+    this.displayDarkBg(1280, 720);
+    add([
+      text("CONGRATS! You just won the game", {
+        font: "Round",
+        size: 50,
+      }),
+      area(),
+      anchor("center"),
+      pos(center().x, center().y),
+    ]);
+    this.displayBlinkingUIMessage(
+      "Press [Enter] to Play Agin",
+      vec2(center().x, center().y + 100)
+    );
+    onKeyPress("enter", () => {
+      play("confirm-ui", { speed: 1.5 });
+      go("menu");
+    });
+  }
 }
 
 export let uiManager = new UIManager();

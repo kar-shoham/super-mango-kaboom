@@ -91,8 +91,8 @@ export function generateMapping(tileType) {
     "@": () => [
       sprite("coin"),
       "coin",
+      "passthrough",
       area(),
-      body({ isStatic: true }),
       offscreen(),
     ],
   };
